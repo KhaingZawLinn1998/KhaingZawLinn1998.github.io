@@ -2,53 +2,232 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "assets/AssetManifest.json": "5bd9d797fa7f40ddb1ff807b731d1079",
-"assets/assets/fonts/Poppins/Poppins-Regular.ttf": "093ee89be9ede30383f39a899c485a82",
-"assets/assets/icons/ads.png": "0bf503ddd2f20d9ad233bf497c94b370",
-"assets/assets/icons/ads_icon.png": "5216a9160dd4b63c564ee853d1709173",
-"assets/assets/icons/arrow-left.png": "509fef61aae710dcbb8224318f6fe132",
-"assets/assets/icons/arrow-right.png": "cb373681e1f92407a1fe31f7b62807de",
-"assets/assets/icons/bell.png": "aded79a6fc2080420d18d9ee65e3c101",
+
+const RESOURCES = {"assets/AssetManifest.bin": "757145b33a845383af4d35a2f1c51d1f",
+"assets/AssetManifest.bin.json": "bcbe40ccecaacae6329f62325badfb21",
+"assets/AssetManifest.json": "3e3ec5410f018904cf37b42cdff3a7f7",
+"assets/assets/icons/47_launcher_icon.png": "1735482cca1ffa5d3f52d861dd7e856d",
+"assets/assets/icons/acc_delete.png": "94fe9f2bc1c059f27df2bbb19bb708e9",
+"assets/assets/icons/acc_delete_icon.png": "c6e14f18c0aeded69a34b51ae77f1e7b",
+"assets/assets/icons/ads_no_image.png": "221df727d86b24040759d3293a3b6157",
+"assets/assets/icons/approved_waiting.png": "3b6442a5572197779d694742216e7081",
+"assets/assets/icons/approved_waiting_image.png": "217cc5bf32a94e69795371912e0b579e",
+"assets/assets/icons/app_version_update_fiori.png": "6a71b8cec36d0e0203c3adb182162d46",
+"assets/assets/icons/app_version_update_mrchef.png": "67c7c150ff52a3392af74d4a6a40b492",
+"assets/assets/icons/arrow_left_1.png": "f5d86771a4b131ba4faebc743af90fb0",
+"assets/assets/icons/benefit_icon.png": "c9ce79b7f0b4b7e08f395547614c79eb",
+"assets/assets/icons/benefit_icon1.png": "4284a4b09b4215057f8db052fdbd9455",
+"assets/assets/icons/besto_app_logo.png": "b36d4f539adb79e8208d1c985a64e7f9",
+"assets/assets/icons/besto_app_logo_1.png": "fb185791956675acb8af28b056b70949",
+"assets/assets/icons/booking_cancel_alert_icon.png": "23279e86a8758e462588e6535a37d7db",
+"assets/assets/icons/booking_cancel_icon.png": "16c55f4f11e5b99206848b0230d8c5a7",
+"assets/assets/icons/booking_show_icon.png": "7baf4a420eca5495e4e268839018d6d6",
+"assets/assets/icons/book_date.png": "000e93f470738a15680472e6bbb70792",
+"assets/assets/icons/book_note.png": "e6413317b1583fd4527ab09002311fcf",
+"assets/assets/icons/book_time.png": "3efd79a78520f698419ed2371d06576f",
+"assets/assets/icons/Burma.png": "86a667d0f1990d68d5e7f571031293ce",
 "assets/assets/icons/calender.png": "307c12c88ba95c2ab83ebd5a2aafa9c8",
-"assets/assets/icons/coffee.png": "59cfed9b526558f0a7d4be394e1f44ac",
-"assets/assets/icons/def_user.png": "88f4f67fe36423a9f099e32757f61acc",
-"assets/assets/icons/down-arrow.png": "66e9889cac410736b3fdf642301ad742",
-"assets/assets/icons/facebook.png": "f84459869557b694c9b71667ac6bc775",
-"assets/assets/icons/fiori_merchant_logo.png": "4ac7cc30fb4a17b676723b238a85b38a",
+"assets/assets/icons/cam_flag.png": "786fe458cbfa5919286b066e09eb48c4",
+"assets/assets/icons/cam_logo.png": "e7713d16f360363d6742951b46c6864e",
+"assets/assets/icons/card_1.png": "25007d73b2392f4e736d318127ab0997",
+"assets/assets/icons/Ch-8.png": "d5e95b7509892bd49b63212e26c03746",
+"assets/assets/icons/cherryk.jpg": "5e879b8dc6b5baa425a8eebc35516e79",
+"assets/assets/icons/cherryk.png": "11548e94998413d08d44555843bea32c",
+"assets/assets/icons/cherryk_app_logo.png": "d2ade552a34ef4ecd7ec0bf33c8b4bef",
+"assets/assets/icons/cherryk_logo.jpg": "c17dafc6faa2a78d024ed5967f7ec6b0",
+"assets/assets/icons/china_flag.png": "b4a241ab7581cec5290118ceddb37bd1",
+"assets/assets/icons/Chinese.png": "b2e1e31b7a8c586f24bf6d57d60521db",
+"assets/assets/icons/claim_rewards.png": "3e317aa0adf76ffe6c8b98a892b03bc9",
+"assets/assets/icons/company_burma_47.png": "95fe8abfa1a920a174eaaa814da6bdb3",
+"assets/assets/icons/company_chapter_8.png": "95cf9aecd6c7d41189067134572b314b",
+"assets/assets/icons/company_chinese_47.png": "51ebe8271f67264a1655e004d13059c1",
+"assets/assets/icons/company_group_47.png": "ec7187c003146eae00fabdc04bb431a6",
+"assets/assets/icons/company_olive_twist.png": "c920a042410a5c3bf9fc9db66c106ba0",
+"assets/assets/icons/company_pinlon_house.png": "3caad43fc7b081655b9b21e730c61ead",
+"assets/assets/icons/company_thai_47.png": "e3f133ed006bd812f09fd889df7a881b",
+"assets/assets/icons/company_tora.png": "de68eb2c99f20d310d32aa06cf81eaa8",
+"assets/assets/icons/cong_example.json": "eefbebb5dbc9fd21c81754e213b94380",
+"assets/assets/icons/cong_icon_image.png": "8ff51b18ca126595250880122be969f7",
+"assets/assets/icons/contact_facebook.png": "8cfaa3ff093fc267bf6a4c5001506f07",
+"assets/assets/icons/contact_instagram.png": "e062bcc3e471186dec5cc427930538cf",
+"assets/assets/icons/contact_link_icon.png": "0117910f0ec263051e07577de045c014",
+"assets/assets/icons/contact_telegram.png": "fd12f11182c5c28ccd0a71b464a64d45",
+"assets/assets/icons/contact_tiktok.png": "6be91249f9c3e5949a8a1c66f00e2ab3",
+"assets/assets/icons/contact_us.png": "eb01d1e3ba38c386c834b38a48c351e2",
+"assets/assets/icons/contact_us_address.png": "7b4357f308e09aed5a6698a5df739bb2",
+"assets/assets/icons/contact_us_email.png": "a63fda0ccada0f8e04a7811c69bb3b28",
+"assets/assets/icons/contact_us_phone.png": "69816ddd00bd13b956d65cb6daddbdc8",
+"assets/assets/icons/contact_viber.png": "eccf7be33b3e716d9509a3ffd110224d",
+"assets/assets/icons/contact_viber_merchant.png": "0da68cb8c3996464b1144b8fa6c110eb",
+"assets/assets/icons/contact_website.png": "cc9456b6534270fed04ddae9456e27de",
+"assets/assets/icons/contact_youtube.png": "3c0e1452d0c1a2b57d11e9e4fdf4058a",
+"assets/assets/icons/coupon_1.png": "77a78b79435b5620dd7258fbd22d32df",
+"assets/assets/icons/crown_reward.png": "d0da383294e866d9ca224773516bc539",
+"assets/assets/icons/daily_promotion.png": "9b777e5a75faf5973d44b211b723a1e1",
+"assets/assets/icons/dark_mode_icon.png": "d3f41213f43000eff048e7be14aeb8b9",
+"assets/assets/icons/def_img.png": "f3aa484e0d0e779c7b96845f939a451f",
+"assets/assets/icons/delete_acc.png": "109e9189beac5810e67e735fcf3e2ae3",
+"assets/assets/icons/delete_recent_icon.png": "e5064948ef0efd26a08342812f8115b3",
+"assets/assets/icons/discount.png": "f5e5ee183dbd5b5dae210702f27212b0",
+"assets/assets/icons/discount_coupon.png": "4e99f21f65f485daa19398d1ad5891a4",
+"assets/assets/icons/discount_icon_2.png": "561cd680444d60a6f53d210b68a21a13",
+"assets/assets/icons/discount_ticket.png": "57881317dc1d9c1c31df3e2e88cac380",
+"assets/assets/icons/dropdown.png": "48835b380df0ec758e7808517ab3c15f",
+"assets/assets/icons/dropUp.png": "e1e0fca7393d704c67856c58a75d753c",
+"assets/assets/icons/earn_point.png": "9ca15c8b5cd28ec0fe1835c51271fddf",
+"assets/assets/icons/earn_pts.png": "3c425a86d6bc4d828d56b37819bbd7f2",
+"assets/assets/icons/edit_p.png": "38abdbd2ea608354cb88fc790d9c7300",
+"assets/assets/icons/email_p.png": "71fc72b49f2d6f269d364f675e049299",
+"assets/assets/icons/explore.png": "de0543bfd424294fee0346b31b6c9345",
+"assets/assets/icons/facebook.png": "0ee6ffa3ff50702d89d6b43a44da4c6c",
+"assets/assets/icons/faq_p.png": "e5efaae08507aca98bff7865a66b489e",
+"assets/assets/icons/feedback.png": "b36a7692cb287513ba06d324dac8fcdb",
+"assets/assets/icons/filter.png": "56451546c31cc92ca1647e45c75b5141",
+"assets/assets/icons/filter_ads.png": "8c1ae50fddf27b76bf1d9030bfc76aa4",
+"assets/assets/icons/final_fiori_icon.png": "633d9cf4fb31204a3e6ce1257b0f80a2",
+"assets/assets/icons/fioriCard.png": "428f0962bc103cf7151f03be4e13b8e7",
+"assets/assets/icons/fioriCard_new_logo.png": "0ce422e0c7628767a6658c4b5f478299",
+"assets/assets/icons/first_check.png": "90523747c760739e463f69d906b3cb18",
+"assets/assets/icons/first_close.png": "c8d1c05ed5a7de505789b5667042e62a",
+"assets/assets/icons/first_screen_bg_3.png": "afc2022217257eec6472c899f631c2c0",
+"assets/assets/icons/first_screen_bg_cherryk.jpg": "88ca0483fcdd4838a4de92be54e4c832",
 "assets/assets/icons/flash.png": "704d9ab9e8e5d7fb5ea8a7ebb0656e72",
-"assets/assets/icons/gender.png": "9dc21829c3ea934676b1c9c30a4979b5",
-"assets/assets/icons/gride.png": "ad29a188ff2808101c3cda0be94fd287",
-"assets/assets/icons/internet.png": "35fec2897852e272e0086350a3a04d69",
-"assets/assets/icons/julia.png": "044eb5ecf362d7d8373d938c546225e7",
-"assets/assets/icons/liste.png": "024c4e0ecae9d84fb3422544c2ec6deb",
-"assets/assets/icons/logo.png": "c62c9f79316bd27721963f0e6d6b12a3",
-"assets/assets/icons/map.png": "31aab2e2b860315397d621ab0344ee5e",
-"assets/assets/icons/memu_language.svg": "2ec9896f592a802db73534073669c571",
-"assets/assets/icons/memu_policy.svg": "4f70b29ea0c74f150acfb232c80cc4a6",
-"assets/assets/icons/memu_profile.svg": "b61d55f2167170b68c1c50af2e8fdc1d",
-"assets/assets/icons/memu_signout.svg": "bef807ed42b8b08e2370290829d2aff5",
-"assets/assets/icons/merchantLogo.png": "01458973c8316a085e2c48958917999f",
-"assets/assets/icons/noti.png": "374e62dbb26dfcfde697b46dbc951b2a",
-"assets/assets/icons/phone_icon.png": "10feb43a2c6ff3b93588f79a5a5841e9",
+"assets/assets/icons/f_b_group.png": "e93fb5a1dbbd36df161ff5eee980b0b6",
+"assets/assets/icons/gallery_burma.png": "398a732aba391eb12b0059719d3d2abe",
+"assets/assets/icons/gift.gif": "81b21e549bc459ff5e5cce8796234054",
+"assets/assets/icons/gift.png": "bfb4094402d005a76b9c944e443bb86e",
+"assets/assets/icons/gift_2.gif": "fa04fa8c2e423e56febc3762799c4732",
+"assets/assets/icons/gmail.png": "a3fac0119bb4798f98be220bddd32d18",
+"assets/assets/icons/google-icon.png": "4100c1990034b377da8f7e7ce946bc11",
+"assets/assets/icons/grid_p.png": "b52b04b73fcd5aaa7d1ee1cc403cad26",
+"assets/assets/icons/help_p.png": "f565c0cad050466b641ca3682a6208f6",
+"assets/assets/icons/home.png": "b7bc62829c8c049f6be115e2b736a9fe",
+"assets/assets/icons/instagram.png": "c5ad0581106cbcc8bb6e654d08362c0a",
+"assets/assets/icons/key.png": "e9e224eddd00b20069a048c650215793",
+"assets/assets/icons/kudos-logo.png": "7d14cfae774baf4f548b51d3c259ec74",
+"assets/assets/icons/lang_p.png": "77cda42df2d0454c7efd4dfff1749994",
+"assets/assets/icons/list_p.png": "37a017c93ac41e13ed25e7ab599054ad",
+"assets/assets/icons/location.png": "2160b41f766632aacf056655e63511e7",
+"assets/assets/icons/location_pin.png": "385d3daaf95e8c50ab6ea7dfdecc5ee6",
+"assets/assets/icons/location_pin1.png": "abcf27b6305c34236add0262383e7ae9",
+"assets/assets/icons/Lock.png": "d1a1fb00de5aeb399c01e594ee4b8ee4",
+"assets/assets/icons/logout_gold_black.png": "1c8d7712fa52afa3a85fdb090565415f",
+"assets/assets/icons/logout_p.png": "2c2856d9e1834f196f6af32abf11e242",
+"assets/assets/icons/logo_p.png": "4a71dac603fbc6f1a964df6ffaac26a9",
+"assets/assets/icons/map1.png": "4dcc9c5226bae8874e546b3989235f87",
+"assets/assets/icons/medi_logo.png": "16ce7d97ec5941c9a673bdb716d6a586",
+"assets/assets/icons/menu.png": "7f80efd1dc6423ef5a90f457b6e24cdb",
+"assets/assets/icons/menu_food.png": "4c53bbf4c6a300fe72e0ed24fc9f1dbb",
+"assets/assets/icons/merchant.png": "dbcfe5353272770c791d0e6bac81c122",
+"assets/assets/icons/MMflag.jpg": "b2b988191e7dfba1211582df64d9f963",
+"assets/assets/icons/mrchef.png": "69617696d998f05e06d61b75bf1cc8bd",
+"assets/assets/icons/mrchef_logo.png": "e88c4e193b218f8506d69fcfcfd95c18",
+"assets/assets/icons/myan_flag.png": "ac7b24e099d155a80d071b62548c73c9",
+"assets/assets/icons/no-tickets.png": "1d62a20afc57f2bbbe1e406ece119d23",
+"assets/assets/icons/noti.png": "3892c6182a1ff9325c6e75780c82402a",
+"assets/assets/icons/noti_copy.png": "522b2647553dc0630c3c0bf5d5020661",
+"assets/assets/icons/not_available_item.png": "e4e61288d886f6f4b8753b0594c2b5de",
+"assets/assets/icons/no_inter_img.png": "dce738fde1064b0afa22ba5050eeb394",
+"assets/assets/icons/no_item_view.png": "748cb4e8be210c009fb7a234f55b4004",
+"assets/assets/icons/no_menu_view.png": "8b3d5e6062382815289d966933a38cab",
+"assets/assets/icons/no_promotion.png": "8b7b0419ace30889c2a7ecc779416edb",
+"assets/assets/icons/no_promotion_transparent.png": "5a4da414854f9778b3e7ee77cafd95a2",
+"assets/assets/icons/no_wifi_img.png": "f8eb81538e1438ccffdceee3bcffeeab",
+"assets/assets/icons/OT.png": "1b423b2fd76de27813520ea1831ba48c",
+"assets/assets/icons/otp_image.png": "af4aa4d1b958aab017d6ceb52d736acd",
+"assets/assets/icons/otp_image_bg.png": "0a7a55e6f674a28daed5d9e6e2492355",
+"assets/assets/icons/overlap_cards_2.png": "91407af5e1ff49c8b45bee57caec0c74",
+"assets/assets/icons/phone1.png": "1d98ae888582a7bb1a3211df66577aba",
+"assets/assets/icons/phone_call_icon.png": "39effbf1ae33c279918e14b2fcfffcc8",
 "assets/assets/icons/photo.png": "577230ba9a57feae4d6472fc1f37267c",
-"assets/assets/icons/polygon.png": "de235da716d43027161472664733d53f",
-"assets/assets/icons/profile.png": "6c95a3197f91167e478853c446069840",
+"assets/assets/icons/Pinlon.png": "1810b46d2e369abd41e047462c57ee33",
+"assets/assets/icons/point_expired.png": "60c1f4d0d061743cf742051d3a84fd4e",
+"assets/assets/icons/point_p.png": "77979992c8eb1325ebbdd8c876e5dcd8",
+"assets/assets/icons/point_rewards_coin.png": "308628753f210219dbab37bb5bc73e46",
+"assets/assets/icons/profile.jpeg": "6e4002a9f77b4c5c24929cb3b9b3ce6e",
+"assets/assets/icons/progressIcon.png": "3c61cf8b5cda1c633f377c9d55a8b2b1",
+"assets/assets/icons/promo_discount.png": "dbbdb9644cef16bf0628046a877012e5",
+"assets/assets/icons/purchase.png": "fa7a8d951514286a8049aacd03e1dc9f",
 "assets/assets/icons/qr_background.png": "e7e10f2437088b7e0564066c02b2640f",
-"assets/assets/icons/qr_code.png": "6172c6891d7f4c1c4f84c4b05e3903c7",
-"assets/assets/icons/qr_scan.png": "a806acefe1f2c9c74e74bde652e47fd6",
-"assets/assets/icons/qr_scanner.png": "5e626892ae32e02d21d96f685b4dd77c",
-"assets/assets/icons/screen.png": "28dc477ca42c97bf70e8eb6bad26138b",
-"assets/assets/icons/Screenshot.png": "19edf84f24d8ccaee7cf041de95746f8",
-"assets/assets/icons/search.png": "c16c5b8c613ce1750f74a4d9eedcf50c",
-"assets/assets/icons/seemore.png": "2969a04835ea638a609e124104aa8bd4",
-"assets/assets/icons/users.png": "c7f7dbb331ee3c03ecf0aba83b604799",
-"assets/assets/icons/user_1.png": "0a5e7a1fa5a0c49f27a55ab285e7d375",
-"assets/assets/icons/x.png": "c144121919f76410c6c59d89fc1a375b",
-"assets/FontManifest.json": "7168722cfbde68a7bbc7135e0fca95a6",
-"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "f67b47b928a08785bda1f5551388c787",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/assets/icons/qr_code.png": "f0bac8e4bb62e6f7630da58ee3187a22",
+"assets/assets/icons/redeem2.png": "f06395fbbc9e83a73746fe5444676e6b",
+"assets/assets/icons/redeem_pts.png": "b2f2279742605b46f1e2e85d0b61ade3",
+"assets/assets/icons/refresh.png": "8d662e15ea69569841830685d91af644",
+"assets/assets/icons/remark.png": "cb3cfdd6be0989ceed6cc26da1859eaf",
+"assets/assets/icons/Route_Direction.png": "efd85519d67d6033a3dcd863bd8bcea7",
+"assets/assets/icons/search.png": "00858a29518534660479ca1f65519bbd",
+"assets/assets/icons/search_2.png": "445912ea9e4c2236c21747ef1c00b05f",
+"assets/assets/icons/selectedF.png": "b9ea4bd42a97ccb87b884b5b776502e1",
+"assets/assets/icons/shop.png": "d3b206be139ba55f8ebd456636969dc3",
+"assets/assets/icons/sort2.png": "354dc829f808e2422ceba23b8caad083",
+"assets/assets/icons/sort_1.png": "ff74dd05cd7b50db9117b668d677a957",
+"assets/assets/icons/sort_2.png": "ab75ef1c087df9b83dfb00b6d26c2bb1",
+"assets/assets/icons/sort_3.png": "d10275d062e54ccb7f91c68aa096a27a",
+"assets/assets/icons/sort_4.png": "1b296ccd99ea9293b8ac22610c755a5f",
+"assets/assets/icons/splash_bg.jpg": "8a553fd07fa9a7332703394344cc8268",
+"assets/assets/icons/stamp_background.png": "87c9525c6dfba774806fd75b5ca47983",
+"assets/assets/icons/stamp_fill.png": "abb38d5310712c103c608f8c16869a8b",
+"assets/assets/icons/streetF_logo.jpg": "e567f72c548c42f9708f45202dd1905c",
+"assets/assets/icons/streetF_logo_icon.png": "a36a89441a5b0915c539ab240246f525",
+"assets/assets/icons/tAndC.png": "20ad73da3d75a34411896755e90bf73a",
+"assets/assets/icons/telegram_icon.png": "88c3ad533febe3d0bb6b5d5ba71ef7c1",
+"assets/assets/icons/Thai.png": "21f17a2941720150fdc1f2d0d2bc8f96",
+"assets/assets/icons/thai47_branches_icon.png": "2d78885130a23866b662c742a9187082",
+"assets/assets/icons/thai47_circle_logo.png": "27e43c4605ed97de2bdd5338c3173403",
+"assets/assets/icons/thai47_fb_group.png": "4eb174cbb2535cd158f17b53abbd90d0",
+"assets/assets/icons/thai47_first_show.png": "1df0744ced2beac6ea27c0451e3a7ede",
+"assets/assets/icons/thai47_logo.png": "e7a516f06305d48f4190aef4f8c254e4",
+"assets/assets/icons/thai47_logo_image.jpg": "7627fab441240d111e3dec486c3ff088",
+"assets/assets/icons/thai_catering.png": "eca498e3d155b1142c2317b0f14d0382",
+"assets/assets/icons/thai_fourty_seven.png": "2a3fc7a62dabfde8544f2a559ec65c2b",
+"assets/assets/icons/thai_gallery.png": "45d48ce253c54b48b34e2c7fa0913493",
+"assets/assets/icons/thai_menu.png": "124cec6e9b40249482fd2e594b0f09ee",
+"assets/assets/icons/theme_p.png": "0944228148e6f2edd7acb92a8dd2994a",
+"assets/assets/icons/ticket_done.png": "3696fd915075d21708bcab5c6f6da524",
+"assets/assets/icons/tiktok.png": "6e47d81e0394ea33b9a19e286625229d",
+"assets/assets/icons/time_ads_icon.png": "e93ca7ea19829c5a495914e3d4ae3948",
+"assets/assets/icons/time_drop_down.png": "7f294d19442c6e4f6d85159651596f9e",
+"assets/assets/icons/Tora.png": "18db7aa6913abcd4826ccb5eb559114b",
+"assets/assets/icons/trans.png": "72213a0ac1304e6c2740ac7a35932382",
+"assets/assets/icons/transfer.png": "d9f45d44bc3df93c9024e502a6ea2462",
+"assets/assets/icons/transP.png": "4b7864734fcfe9dab09508505708fce9",
+"assets/assets/icons/uk_flag.png": "aac0dfefc080856931658ea9c760534e",
+"assets/assets/icons/url_config.png": "57faba0750ce5b2f8669147cd343342f",
+"assets/assets/icons/user_1.png": "6b0030bc8423d227622df7991f9ac03c",
+"assets/assets/icons/user_icon.png": "417db7e333f382e5fa506c6799e813c4",
+"assets/assets/icons/wallet_p.png": "c002844c10ceac12d8cbf1fef753e49a",
+"assets/assets/icons/website.png": "5eb7ac28d75b5750383c95845fbbf30a",
+"assets/assets/icons/welcome_point.png": "921fdf079b8eed7c0337ff684f25692c",
+"assets/assets/icons/welcome_points.png": "e4f073ee2ab5aacab49df29bd1cac9eb",
+"assets/assets/icons/welcome_pts.png": "f02b22c6232a2ac39d14f180be8f1f71",
+"assets/assets/icons/youtube_icon.png": "3b04144e05f24dbe0b4a06557fed21c6",
+"assets/assets/icons/yves.png": "ed42f5b7d0218ffeedf6060c089bc948",
+"assets/assets/icons/yves2025.jpg": "4a84cb23922d479a59d6f337652ce767",
+"assets/assets/icons/yves_app_logo.png": "37eb3ced4a2f7e165e146a6c90335c51",
+"assets/assets/icons/yves_color_circle.png": "d1065352a400392b80708c36be0a44f3",
+"assets/assets/icons/yves_contact_us.png": "315f87a905b5ca2f7610177b30f49408",
+"assets/assets/icons/yves_first_show.jpg": "e539d60d898efd55795b1be58f91af92",
+"assets/assets/icons/yves_icon.png": "308e1ab7ace3c404ec6461ba23f42043",
+"assets/assets/icons/yves_login_2.png": "8b31b75fd4234be420a63b66662d2cd1",
+"assets/assets/icons/yves_login_image.jpeg": "7185c917a68cce64416a86e99cef29de",
+"assets/assets/icons/yves_login_logo.png": "5c59a5ef51ac5b692b26a649a9ba74c0",
+"assets/assets/icons/yves_rocher.jpg": "2ccdff3ee4c2ba15589e2abf2b1ad736",
+"assets/assets/icons/yves_splash.png": "109a0337c6c52286122adbde0cb8a958",
+"assets/assets/icons/yves_splash_center.png": "45c3b3227e7d5556211bdd50efe02c19",
+"assets/assets/icons/yves_splash_top.png": "c1dadd41f3c5fa44718ea9433f86b0cc",
+"assets/assets/icons/yves_splash_top_white.png": "10b5707bc31e15e97ff7db8671479d2a",
+"assets/assets/pdf/about_us.pdf": "6ae302cf990eb03c75520262593c948c",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
+"assets/fonts/MaterialIcons-Regular.otf": "414789cd9b53a3e03e0e384b7a15017d",
+"assets/lib/lang/ca.json": "d1f5fc34e1de1bf8d358e059a48d1338",
+"assets/lib/lang/en.json": "5c38829669b8bf9ced8642ede8c2028f",
+"assets/lib/lang/my.json": "f34120528d22f24b484619d4e7bd80ef",
+"assets/lib/lang/zh.json": "4337acf605aae41759d7572adabd3c8e",
+"assets/NOTICES": "b4134932249fda5aeb82db28312a1b65",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "e986ebe42ef785b27164c36a9abc7818",
+"assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
+"assets/packages/fluttertoast/assets/toastify.js": "56e2c9cedd97f10e7e5f1cebd85d53e3",
+"assets/packages/flutter_js/assets/js/fetch.js": "277e0c5ec36810cbe57371a4b7e26be0",
 "assets/packages/intl_phone_field/assets/flags/ad.png": "384e9845debe9aca8f8586d9bedcb7e6",
 "assets/packages/intl_phone_field/assets/flags/ae.png": "792efc5eb6c31d780bd34bf4bad69f3f",
 "assets/packages/intl_phone_field/assets/flags/af.png": "ba710b50a060b5351381b55366396c30",
@@ -305,31 +484,37 @@ const RESOURCES = {
 "assets/packages/intl_phone_field/assets/flags/za.png": "b28280c6c3eb4624c18b5455d4a1b1ff",
 "assets/packages/intl_phone_field/assets/flags/zm.png": "81cec35b715f227328cad8f314acd797",
 "assets/packages/intl_phone_field/assets/flags/zw.png": "078a3267ea8eabf88b2d43fe4aed5ce5",
-"assets/shaders/ink_sparkle.frag": "acbd62bf05bacd328553e0b1cdcc7ef4",
-"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
-"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
-"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
-"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
+"canvaskit/canvaskit.js": "26eef3024dbc64886b7f48e1b6fb05cf",
+"canvaskit/canvaskit.js.symbols": "efc2cd87d1ff6c586b7d4c7083063a40",
+"canvaskit/canvaskit.wasm": "e7602c687313cfac5f495c5eac2fb324",
+"canvaskit/chromium/canvaskit.js": "b7ba6d908089f706772b2007c37e6da4",
+"canvaskit/chromium/canvaskit.js.symbols": "e115ddcfad5f5b98a90e389433606502",
+"canvaskit/chromium/canvaskit.wasm": "ea5ab288728f7200f398f60089048b48",
+"canvaskit/skwasm.js": "ac0f73826b925320a1e9b0d3fd7da61c",
+"canvaskit/skwasm.js.symbols": "96263e00e3c9bd9cd878ead867c04f3c",
+"canvaskit/skwasm.wasm": "828c26a0b1cc8eb1adacbdd0c5e8bcfa",
+"canvaskit/skwasm.worker.js": "89990e8c92bcb123999aa81f7e203b1c",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
+"flutter.js": "4b2350e14c6650ba82871f60906437ea",
+"flutter_bootstrap.js": "edf66cb4bbb58c7e0b7cd7a88a3b3246",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "1edbf007e4933f5234fc921fab146c3f",
-"/": "1edbf007e4933f5234fc921fab146c3f",
-"main.dart.js": "60d66ec55cedda2ae0628ffa4c36d261",
-"manifest.json": "474b59f99620ecd6454b81fbed1c4bcd",
-"version.json": "43e34aaf6e78e3490253a7010bf8fb3b"
-};
-
+"index.html": "30440c6da58f001131d496d58d1b02c5",
+"/": "30440c6da58f001131d496d58d1b02c5",
+"main.dart.js": "c031d1ec13b636aadb14b7af7bcafc13",
+"manifest.json": "ca5a2eeb44f6091f15fc9852b3cf865f",
+"version.json": "93664e244b78dbb51ea54e466d7e0a5a"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
-"assets/AssetManifest.json",
+"flutter_bootstrap.js",
+"assets/AssetManifest.bin.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -340,7 +525,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -362,6 +546,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -387,6 +573,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -397,7 +585,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -437,7 +624,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -450,7 +636,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -471,7 +656,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
