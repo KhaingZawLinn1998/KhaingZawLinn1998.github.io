@@ -1,6 +1,6 @@
 {
-    "name": "fiori_card",
-    "short_name": "fiori_card",
+    "name": "testwebapp2",
+    "short_name": "testwebapp2",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
